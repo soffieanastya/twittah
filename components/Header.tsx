@@ -7,7 +7,7 @@ interface HeaderProps {
     showBackArror?: boolean;
 }
 
-const Header:React.FC<HeaderProps> = ({ label, showBackArror}) => {
+const Header:React.FC<HeaderProps> = ({ label, showBackArror }) => {
     const router =  useRouter();
     const handleBack = useCallback(() => {
         router.back();

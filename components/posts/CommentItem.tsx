@@ -1,4 +1,4 @@
-import { formatDistanceToNowStrict } from "date-fns/esm";
+import { formatDistanceToNowStrict } from "date-fns";
 import { useRouter } from "next/router";
 import { useCallback, useMemo } from "react";
 import Avatar from "../Avatar";
@@ -9,7 +9,7 @@ interface CommentItemProps {
 
 const CommentItem: React.FC<CommentItemProps> = ({ data }) => {
     const router = useRouter()
-    const goToUSer = useCallback((event:any)=>{
+    const goToUser = useCallback((event:any)=>{
         event.stopPropagation()
 
         router.push(`/users/${data.user.id}`)
@@ -28,7 +28,7 @@ const CommentItem: React.FC<CommentItemProps> = ({ data }) => {
                 <Avatar userId={data.user.id} />
                 <div>
                     <div className="flex flex-row items-center gap-2">
-                        <p className="text-white font-semibold cursor-pointer hover:underline">
+                        <p onClick={goToUser} className="text-white font-semibold cursor-pointer hover:underline">
                             {data.user.name}
                         </p>
                         <span className="text-neutral-500 cursor-pointer hover:underline hidden md:block">

@@ -13,9 +13,9 @@ const PostView = () => {
 
     const { data: fetchedPost, isLoading } = usePost(postId as string)
 
+    // buat loading
     if(isLoading || !fetchedPost){
-        return (
-            // efek loading
+        return ( 
             <div className="flex justify-center items-center h-full">
                 <ClipLoader color='lightblue' size={80} />
             </div>
@@ -31,4 +31,4 @@ const PostView = () => {
     )
 }
 
-export default PostView
+export default PostView;
