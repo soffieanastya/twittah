@@ -40,13 +40,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ==================================================================
 
 hi temu lagi kita. notes buat aku di masa depan, tolong tambahin atau benerin ini:
--bisa banget app twittah ini di rapikan lagi tata letaknya
--tambahin feature retweet, kalau bisa ubah jadi kaya jaman dulu retweetnya, pake RT:"tweetttt....."
--tambahin batas per-tweet maks 150 huruf
--tambahin feature delete account
--tambah feature delete tweet
--se-pengennya kamu ubah ni app twittah, jangan ada fature edit tweet okk dan jangan ada pertanda kalau akun tsb online. o m a t
--lah iya ubah inii jadi ga pake 'liked your tweet', tapi ubah jadi 'favorited your tweet'. this is important!!!
--error handling waktu foto yang mau di upload jangan pake page 404 basic.
+- bisa banget app twittah ini di rapikan lagi tata letaknya
+- tambahin feature retweet, kalau bisa ubah jadi kaya jaman dulu retweetnya, pake RT:"tweetttt....."
+- tambahin batas per-tweet maks 150 huruf
+- tambahin feature delete account
+- tambah feature delete tweet
+- se-pengennya kamu ubah ni app twittah, jangan ada fature edit tweet okk dan jangan ada pertanda kalau akun tsb online. o m a t
+- lah iya ubah inii jadi ga pake 'liked your tweet', tapi ubah jadi 'favorited your tweet'. this is important!!!
+- error handling waktu foto yang mau di upload jangan pake page 404 basic.
 
 baru segini kepikirannya, nnti kl gabut lanjutin ya
