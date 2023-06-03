@@ -29,7 +29,8 @@ const Sidebar = () => {
             auth: true
         },
     ]
-
+    // console.log(currentUser);
+    
     // const { data: session } = useSession()
     // const handleSignOut = async () => {
     //     await signOut({ redirect: false })
@@ -52,9 +53,10 @@ const Sidebar = () => {
                                 alert={item.alert}
                             />
                     ))}
-                    {currentUser && (
+                    {currentUser && currentUser.id !== '' ? (
                         <SidebarItem onClick={signOut} icon={BiLogOut} label="Logout" />
-                    )}
+                    ) : null
+                    }
                     <SidebarTweetButton />
                   </>
                 </div>

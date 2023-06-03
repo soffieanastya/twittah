@@ -34,7 +34,7 @@ const PostItem:React.FC<PostItemProps> = ({ data, userId }) => {
     const onLike = useCallback((e:any)=>{
         e.stopPropagation()
 
-        if(!currentUser){
+        if(currentUser.id === ''){
             return loginModal.onOpen() 
         }
 

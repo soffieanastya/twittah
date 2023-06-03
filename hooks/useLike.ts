@@ -20,7 +20,7 @@ const useLike = ({ postId, userId}: {postId:string, userId?: string})=>{
     },[currentUser?.id, fetchedPost?.likedIds])
 
     const togglelike = useCallback(async()=>{
-        if(!currentUser){
+        if(currentUser.id === ''){
             return loginModal.onOpen();
         }
         try{

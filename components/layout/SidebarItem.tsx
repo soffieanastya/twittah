@@ -28,7 +28,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ label, href, icon: Icon, onCl
         if(onClick){
             return onClick()
         }
-        if(auth && !currentUser){
+        if(auth && currentUser.id === ''){
             loginModal.onOpen()
         }else if(href){
             router.push(href) 

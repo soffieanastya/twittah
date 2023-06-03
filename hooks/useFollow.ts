@@ -17,7 +17,7 @@ const useFollow = (userId: string) => {
     },[userId, currentUser?.followingIds])
 
     const toggleFollow = useCallback( async () => {
-        if(!currentUser){
+        if(currentUser.id === ''){
             return loginModal.onOpen()
         }
         try{

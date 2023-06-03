@@ -52,7 +52,7 @@ const Form:React.FC<FormProps> = ({ placeholder, isComment, postId }) => {
     
     return ( 
         <div className="border--[1px] border-neutral-800 px-5 py-2">
-            {currentUser ? (
+            {currentUser.id !== '' ? (
                 <div className="flex flex-row gap-4">
                     <div>
                         <Avatar userId={currentUser?.id} />

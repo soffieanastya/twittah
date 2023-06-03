@@ -59,9 +59,9 @@ const EditModal = () => {
         </div>
     )
     return ( 
-        <Modal disabled={isLoading} isOpen={editModal.isOpen} 
-            title='Edit profile' actionLabel="Save" onClose={editModal.onClose}
-            onSubmit={onSubmit} body={body}  />
+        <Modal isOpen={editModal.isOpen}  onClose={editModal.onClose} onSubmit={onSubmit}
+            title='Edit' actionLabel="Save"
+            body={body} disabled={isLoading}  />
      );
 }
  
