@@ -9,10 +9,10 @@ interface LayoutProps {
 const Layout:React.FC<LayoutProps> = ({ children }) => {
     return ( 
         <div className="h-screen bg-black">
-            <div className="container h-full mx-auto xl:px-30 max-w-6xl">
-                <div className="grid grid-cols-4 h-full">
+            <div className="lg:container h-full mx-auto w-full ">
+                <div className="grid grid-cols-9 h-full">
                     <Sidebar />
-                    <div className="col-span-3 lg:col-span-2 border-x-[1px]
+                    <div className="col-span-8 mx-2 lg:col-span-5 border-x-[1px]
                         border-neutral-800">
                         {children}
                     </div>

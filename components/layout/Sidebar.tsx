@@ -37,9 +37,9 @@ const Sidebar = () => {
  
     
     return ( 
-        <div className='col-span-1 h-full pr-4 md:pr-6'>
-            <div className='flex flex-col items-end '>
-                <div className='space-y-2 lg:w-[230px]'>
+        <div className='mx-2 col-span-1 lg:col-span-2 h-full '>
+            <div className=' items-end sticky top-0 '>
+                <div className='lg:space-y-1'>
                   <>
                     <SidebarLogo />
                     {items.map( (item) => (
